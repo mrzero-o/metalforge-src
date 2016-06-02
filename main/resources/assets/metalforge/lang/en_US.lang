@@ -1,0 +1,261 @@
+achievement.getCopper=What color is the ore
+achievement.getCopper.desc=Smelt some Copper Ore
+achievement.getCoalCoke=No, not that coke
+achievement.getCoalCoke.desc=Coal Coke is the result of purifying your  coal
+achievement.getXyrenite=There will be durability
+achievement.getXyrenite.desc=
+achievement.craftHTOven=Blazing Topic
+achievement.craftHTOven.desc=Make your metals a bit more flexible with a short heat treatment
+achievement.craftPurifier=Pure as water
+achievement.craftPurifier.desc=Get more buck for yo' bang with the Mineral Purifier
+achievement.craftHTSmelter=Volcanic Topic
+achievement.craftHTSmelter.desc=Time to ditch those clumsy rock furnaces for something better
+achievement.craftCauldron=Cool beans
+achievement.craftCauldron.desc=What better way to cool down than jumping into a cauldron full of watery water
+achievement.craftMetalworkStation=Reinforced Benchmarking
+achievement.craftMetalworkStation.desc=It's common sense to not make fire kiss wood
+achievement.makeTongs=Not my hands!
+achievement.makeTongs.desc=Ever burnt your hands with red hot metal? Then try this out!
+achievement.makeSteelBow=Pew, pew
+achievement.makeSteelBow.desc=Harder, better, not faster, but stronger
+achievement.makeBerylliumBow=BB&B
+achievement.makeBerylliumBow.desc=Prepared to wreck stuff when handling a Beryllium Bronze Bow
+achievement.alloySteel=Real Steel
+achievement.alloySteel.desc=It's time for an upgrade. It's steeltime
+achievement.alloyBerylBronze=Better than bronze
+achievement.alloyBerylBronze.desc=This alloy is made out of copper, iron and the weird stuff
+achievement.alloyXyrenium=X
+achievement.alloyXyrenium.desc=This is the stuff
+
+itemGroup.Metalforge=New Metalforge
+
+tile.oreAll.copperOre.name=Copper Ore
+tile.oreAll.tungstenOre.name=Tungsten Ore
+tile.oreAll.xyreniteOre.name=Xyrenite Ore
+tile.oreAll.brownCoalOre.name=Brown Coal Ore
+tile.oreAll.richCoalOre.name=Rich Coal Ore
+
+tile.metalBlockAll.copperBlock.name=Block of Copper
+tile.metalBlockAll.tungstenBlock.name=Block of Tungsten
+tile.metalBlockAll.xyreniumBlock.name=Block of Xyrenium
+tile.metalBlockAll.dragoonyteBlock.name=Block of Dragoonyte
+tile.metalBlockAll.steelBlock.name=Block of Steel
+tile.metalBlockAll.berylBronzeBlock.name=Block of Beryllium Bronze
+
+tile.LampOff.name=Lantern
+tile.LampActive.name=Lantern
+
+tile.berylAll.morganiteBeryl.name=Morganite
+tile.berylAll.heliodorBeryl.name=Heliodor
+tile.berylAll.aquamarineBeryl.name=Aquamarine
+tile.berylAll.morganiteChiseledBeryl.name=Polished Morganite
+tile.berylAll.heliodorChiseledBeryl.name=Polished Heliodor
+tile.berylAll.aquamarineChiseledBeryl.name=Polished Aquamarine
+
+tile.magnetiteAll.stoneMagnetite.name=Magnetite
+tile.magnetiteAll.brickMagnetite.name=Magnetite Bricks
+tile.magnetiteAll.smallbrickMagnetite.name=Small Magnetite Bricks
+tile.magnetiteAll.chiseledMagnetite.name=Chiseled Magnetite 
+tile.magnetiteAll.smoothMagnetite.name=Smooth Magnetite 
+tile.magnetiteAll.squarebrickMagnetite.name=Square Magnetite Bricks
+
+tile.SpringPad.SpringPadCopper.name=Spring Pad
+tile.SpringPad.SpringPadSilver.name=Spring Pad
+tile.SpringPad.SpringPadGold.name=Spring Pad
+tile.SpringRail.name=Spring Rail
+
+tile.cokeBlock.name=Block of Coal Coke
+
+tile.blastWall.name=Blast Wall
+tile.ancientSoil.name=Q-Soil
+tile.ancientGrass.name=Q-Grass
+tile.blackwoodSapling.name=Blackwood Sapling
+tile.blackwoodLeaves.name=Blackwood Leaves
+tile.blackwoodLeavesMango.name=Blackwood Mangos
+tile.blackwoodLog.name=Blackwood Log
+tile.blackwoodFence.name=Blackwood Fence
+tile.blackwoodFenceGate.name=Blackwood Fence Gate
+tile.blackwoodPlanks.name=Blackwood Planks
+tile.blackwoodStairs.name=Blackwood Stairs
+tile.blackwoodSlab.name=Blackwood Slab
+tile.blackwoodSlabDouble.name=Blackwood Doubleslab
+
+tile.HeatCoil.name=Heat Coil
+tile.WorldAnchor.name=Heavy World Anchor
+tile.HTOvenActive.name=Heat Treating Oven
+tile.HTOvenIdle.name=Heat Treating Oven
+tile.HTSmelterActive.name=High Temperature Smelter
+tile.HTSmelterIdle.name=High Temperature Smelter
+tile.PurifierActive.name=Mineral Purifier
+tile.PurifierIdle.name=Mineral Purifier
+tile.MetalworkStation.name=Metalwork Station
+tile.HeatProviderIdle.name=Heat Provider
+tile.HeatProviderActive.name=Heat Provider
+tile.CarbonDiablo.name=Carbon Diablo
+tile.InfusionStar.name=Infusion Star
+tile.LilyRunnerPad.name=Lily Pad Runner Pad
+
+tile.MetalOvenActive.name=Reinforced Heat Treating Oven
+tile.MetalOvenIdle.name=Reinforced Heat Treating Oven
+tile.MetalSmelterActive.name=Reinforced High Temperature Smelter
+tile.MetalSmelterIdle.name=Reinforced High Temperature Smelter
+tile.MetalPurifierActive.name=Reinforced Mineral Purifier
+tile.MetalPurifierIdle.name=Reinforced Mineral Purifier
+
+item.ingotCopper.name=Copper Ingot
+item.ingotTungsten.name=Tungsten Ingot
+item.ingotSteel.name=Steel Ingot
+item.ingotBerylBronze.name=Beryllium Bronze Ingot
+item.ingotXyrenium.name=Xyrenium Ingot
+item.ingotDragoonyte.name=Dragoonyte Ingot
+
+item.forgerBasic.name=Iron Forgehammer
+item.forgerAdvanced.name=Beryllium Bronze Forgehammer
+item.forgerElite.name=Dragoon Forgehammer
+
+item.BackpackSteel.name=Steel Backpack
+item.BackpackBBronze.name=Beryllium Bronze Backpack
+item.BackpackXyrenium.name=Xyrenium Backpack
+
+item.Tongs.name=Tongs
+item.GrapplingHook.name=Grappling Hook
+item.Armorslayer.name=The Armorslayer
+item.SteelBow.name=Steel Bow
+item.BerylliumBow.name=Beryllium Bronze Bow
+item.XyreniumBow.name=Xyrenium Bow
+item.LightningBlade.name=Thunder Edge
+item.LightningBladeInert.name=Inert Lightning Blade
+item.MetalBall.name=Heavy Orb
+item.FlyingMachine.name=CP Flying Machine
+
+item.SteelHelmet.name=Steel Helmet
+item.SteelChestplate.name=Steel Chestplate
+item.SteelLeggings.name=Steel Leggings
+item.SteelBoots.name=Steel Boots
+item.BBHelmet.name=Beryllium Bronze Helmet
+item.BBChestplate.name=Beryllium Bronze Chestplate
+item.BBLeggings.name=Beryllium Bronze Leggings
+item.BBBoots.name=Beryllium Bronze Boots
+item.XyreniumHelmet.name=Xyrenium Helmet
+item.XyreniumChestplate.name=Xyrenium Chestplate
+item.XyreniumLeggings.name=Xyrenium Leggings
+item.XyreniumBoots.name=Xyrenium Boots
+item.DragoonHelmet.name=Dragoon Helmet
+item.DragoonChestplate.name=Dragoon Chestplate
+item.DragoonLeggings.name=Dragoon Leggings
+item.DragoonBoots.name=Dragoon Boots
+item.SoulKHelmet.name=Soul Knight's Helmet
+item.SoulKChestplate.name=Soul Knight's Chestplate
+item.SoulKLeggings.name=Soul Knight's Leggings
+item.SoulKBoots.name=Soul Knight's Boots
+item.NormalTNTVest.name=TNT Vest
+item.GreaterTNTVest.name=TNT Vest
+item.InsaneTNTVest.name=TNT Vest
+
+item.alloySteel.name=Glowing Clump of Steel
+item.alloyBerylBronze.name=Glowing Clump of Beryllium Bronze
+item.alloyXyrenium.name=Glowing Clump of Xyrenium
+item.alloyDragoonyte.name=Glowing Clump of Dragoonyte
+
+item.nuggetSteel.name=Steel Nugget
+item.nuggetBerylBronze.name=Beryllium Bronze Nugget
+item.nuggetDoomsteel.name=Doomsteel Nugget
+item.nuggetIron.name=Iron Nugget
+item.nuggetTungsten.name=Tungsten Nugget
+item.nuggetXyrenium.name=Xyrenium Nugget
+item.nuggetDragoonyte.name=Dragoonyte Nugget
+item.nuggetCopper.name=Copper Nugget
+
+item.hotIron.name=Glowing Iron Ingot
+item.hotGold.name=Glowing Gold Ingot
+item.hotCoal.name=Glowing Coal
+item.hotCopper.name=Glowing Copper Ingot
+item.hotSteel.name=Glowing Steel Ingot
+item.hotBerylBronze.name=Glowing Beryllium Bronze Ingot
+item.hotTungsten.name=Glowing Tungsten Ingot
+item.hotXyrenium.name=Glowing Xyrenium Ingot
+item.hotDragoonyte.name=Glowing Dragoonyte Ingot
+
+item.plateIron.name=Iron Plate
+item.plateGold.name=Gold Plate
+item.plateCopper.name=Copper Plate
+item.plateTungsten.name=Tungsten Plate
+item.plateSteel.name=Steel Plate
+item.plateBerylBronze.name=Beryllium Bronze Plate
+item.plateXyrenium.name=Xyrenium Plate
+item.plateDragoonyte.name=Dragoonyte Plate
+
+item.dustCopper.name=Copper Dust
+item.dustTungsten.name=Tungsten Dust
+item.dustGold.name=Gold Dust
+item.dustIron.name=Iron Dust
+
+item.gearSteel.name=Steel Gear
+item.gearBBronze.name=Beryllium Bronze Gear
+
+item.DrinkingHelmet.name=Milk Helmet
+item.SpringBoots.name=Spring Boots
+item.brownCoal.name=Brown Coal
+item.dustCoal.name=Ground Coal
+item.Spring.name=Beryllium Bronze Spring
+item.coalCoke.name=Coal Coke
+item.bioplantmass.name=Plantmass
+item.biofertilizer.name=Bio Fertilizer
+item.berylliumRaw.name=Raw Beryllium
+item.xyrenite.name=Xyrenite
+item.xyreniteX.name=Xyrenite X
+item.blackwoodStick.name=Blackwood Stick
+
+item.T1RockShovel.name=CP Rock Shovel
+item.T2RockShovel.name=CP Rock Shovel
+item.LightningSpawner.name=CP Lightning Summoner
+item.ItemGun.name=CP Item Gun
+
+item.SteelSword.name=Steel Sword
+item.SteelPickaxe.name=Steel Pickaxe
+item.SteelAxe.name=Steel Axe
+item.SteelSpade.name=Steel Shovel
+item.SteelHoe.name=Steel Hoe
+item.SteelDagger.name=Steel Dagger
+item.SteelSkogAxe.name=Steel Skogaxe
+
+item.BBSword.name=Beryllium Bronze Sword
+item.BBPickaxe.name=Beryllium Bronze Pickaxe
+item.BBAxe.name=Beryllium Bronze Axe
+item.BBSpade.name=Beryllium Bronze Shovel
+item.BBHoe.name=Beryllium Bronze Hoe
+item.BBDagger.name=Beryllium Bronze Dagger
+item.BBSkogAxe.name=Beryllium Bronze Skogaxe
+
+item.XyreniumSword.name=Xyrenium Sword
+item.XyreniumPickaxe.name=Xyrenium Pickaxe
+item.XyreniumAxe.name=Xyrenium Axe
+item.XyreniumSpade.name=Xyrenium Shovel
+item.XyreniumHoe.name=Xyrenium Hoe
+item.XyreniumDagger.name=Xyrenium Dagger
+item.XyreniumSkogAxe.name=Xyrenium Skogaxe
+
+item.DragoonLance.name=Dragoon Lance
+item.DragoonHammer.name=Dragoon Hammer
+item.DragoonBlade.name=Dragoon Edge
+
+item.StructureSpawner.name=Structure Spawner
+
+death.attack.heatcoil=%1$s was grilled alive by a heat coil
+death.attack.heatcoil.player=%1$s was grilled alive whilst fighting %2$s
+death.attack.kamikaze=%1$s blew up
+death.attack.kamikaze.player=%1$s blew up whilst fighting %2$s
+death.attack.metalball=%1$s was squashed by a flying piece of metal
+death.attack.metalball.player=%1$s was squashed by %2$s's miniature metorite
+death.attack.novaburn=%1$s was burnt by the power of a nova
+death.attack.novaburn.player=%1$s was burnt with the power of a nova whilst fighting %2$s
+death.attack.crescentflux=%1$s was consumed by an Infusion Star
+death.attack.crescentflux.player=%1$s was consumed by an Infusion Star whilst fighting %2$s
+
+potion.novaburn=Novaburn
+
+metalforge.container.purifier=Purifying
+metalforge.container.oven=Heat Treating
+metalforge.container.smelter=Smelting
+metalforge.container.metalwork=Metalworking
+metalforge.container.cauldron=Cauldron

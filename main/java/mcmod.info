@@ -1,0 +1,16 @@
+[
+    {
+  "modid": "metalforge",
+  "name": "New Metalforge",
+  "description": "Based around metals, alloying and making new useful gadgets",
+  "version": "1.0.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["mrzero_o"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+    }
+]
