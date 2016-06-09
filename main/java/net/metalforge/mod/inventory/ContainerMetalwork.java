@@ -62,14 +62,15 @@ public class ContainerMetalwork extends Container {
 	}
 
 	public void onCraftMatrixChanged(IInventory iinventory){
-		if(CraftingManager.getInstance().findMatchingRecipe(craftMatrix, worldObj) != null){
-			craftResult.setInventorySlotContents(0, CraftingManager.getInstance().findMatchingRecipe(craftMatrix, worldObj));
-			updateTile();
-		}
+		//Just in case you are wondering... you used the wrong manager and it was taking crafting recipies from vanilla minecraft
+		//if(MetalworkingManager.getInstance().findMatchingRecipe(craftMatrix, worldObj) != null){    -- We need to update it to null if it isn't a recipe
+			craftResult.setInventorySlotContents(0, MetalworkingManager.getInstance().findMatchingRecipe(craftMatrix, worldObj));
+			updateTile(); //If you are going to save it in the tile then you need to update it when it is crafted -- i don't know a direct fix
+		//}
 		
 		if(this.blX) this.updateTile();
 	}
-
+	
     private void updateTile() {
         for (int i = 0; i < 9; ++i) {
         	if(this.craftMatrix.getStackInSlot(i) != null){
