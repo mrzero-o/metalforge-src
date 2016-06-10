@@ -7,6 +7,7 @@ import net.metalforge.mod.crafting.MFOreDictionary;
 import net.metalforge.mod.crafting.MFSmelting;
 import net.metalforge.mod.inventory.MFGuiHandler;
 import net.metalforge.mod.items.MFItems;
+import net.metalforge.mod.minetweaker.MetalTweaker;
 import net.metalforge.mod.random.MFConfiguration;
 import net.metalforge.mod.random.MFEventHandler;
 import net.metalforge.mod.tileentity.TileEntityWorldAnchorCLCB;
@@ -18,8 +19,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.common.ForgeChunkManager;
 import net.minecraftforge.common.MinecraftForge;
+import sun.rmi.log.LogHandler;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.IFuelHandler;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -85,6 +88,13 @@ public class MFMod {
 		CommonProxy.renderItems();
 		
 		Compatibility.loadInit(event);
+		
+		//Registering minetweaker addon
+		if(Loader.isModLoaded("MineTweaker3")){
+			try{
+				MetalTweaker.initTweaks();
+			}catch(Exception e){  }
+		}
 	}
 	
 	@EventHandler

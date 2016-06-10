@@ -32,7 +32,7 @@ public class ContainerMetalwork extends Container {
 		
 		this.blX = false;
 		for (int i = 0; i < 9; ++i) {
-			if(this.tileentity.getStackInSlot(i) != null) this.craftMatrix.setInventorySlotContents(i, this.tileentity.getStackInSlot(i));
+			this.craftMatrix.setInventorySlotContents(i, this.tileentity.getStackInSlot(i));
         }
         this.blX = true;
 		
@@ -42,7 +42,12 @@ public class ContainerMetalwork extends Container {
 	}
 	
 	private void addSlots(InventoryPlayer invPlayer){
-		this.addSlotToContainer(new SlotCrafting(invPlayer.player, craftMatrix, craftResult, 0, 124, 35));
+		this.addSlotToContainer(new SlotCrafting(invPlayer.player, craftMatrix, craftResult, 0, 124, 35){
+			@Override
+			public boolean canTakeStack(EntityPlayer p_82869_1_) {
+				return false;
+			}
+		});
 
 		for (int i = 0; i < 3; i++) {
 			for(int k = 0; k < 3; k++) {
@@ -62,21 +67,18 @@ public class ContainerMetalwork extends Container {
 	}
 
 	public void onCraftMatrixChanged(IInventory iinventory){
-		if(CraftingManager.getInstance().findMatchingRecipe(craftMatrix, worldObj) != null){
-			craftResult.setInventorySlotContents(0, CraftingManager.getInstance().findMatchingRecipe(craftMatrix, worldObj));
-			updateTile();
-		}
+		//Just in case you are wondering... you used the wrong manager and it was taking crafting recipies from vanilla minecraft
+		//if(MetalworkingManager.getInstance().findMatchingRecipe(craftMatrix, worldObj) != null){    -- We need to update it to null if it isn't a recipe
+			craftResult.setInventorySlotContents(0, MetalworkingManager.getInstance().findMatchingRecipe(craftMatrix, worldObj));
+			//updateTile(); //If you are going to save it in the tile then you need to update it when it is crafted -- i don't know a direct fix
+		//}
 		
 		if(this.blX) this.updateTile();
 	}
-
+	
     private void updateTile() {
         for (int i = 0; i < 9; ++i) {
-        	if(this.craftMatrix.getStackInSlot(i) != null){
-            	if(this.craftMatrix.getStackInSlot(i).stackSize <= 0){
-            		this.tileentity.setInventorySlotContents(i, null);
-            	}else this.tileentity.setInventorySlotContents(i, this.craftMatrix.getStackInSlot(i));
-        	}
+        	this.tileentity.setInventorySlotContents(i, this.craftMatrix.getStackInSlot(i));
         }
         this.tileentity.container = this;
     }

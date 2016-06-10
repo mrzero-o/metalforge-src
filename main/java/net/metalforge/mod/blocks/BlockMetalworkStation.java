@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import net.metalforge.mod.MFMod;
 import net.metalforge.mod.crafting.MetalworkingManager;
+import net.metalforge.mod.inventory.ContainerMetalwork;
 import net.metalforge.mod.inventory.MFGuiHandler;
 import net.metalforge.mod.items.ItemForger;
 import net.metalforge.mod.tileentity.TileEntityMetalworkStation;
@@ -106,7 +107,13 @@ public class BlockMetalworkStation extends BlockContainerMF{
 	        		matrix.setInventorySlotContents(i, tileentity.getStackInSlot(i));
 	        	}
 	        }*/
-			InventoryCrafting matrix = tileentity.container.craftMatrix;
+			InventoryCrafting matrix = null;
+			if(tileentity.container != null){
+				matrix = tileentity.container.craftMatrix;
+			}else{
+				tileentity.container = new ContainerMetalwork(player.inventory, tileentity);
+				matrix = tileentity.container.craftMatrix;
+			}
 			if(MetalworkingManager.getInstance().findMatchingRecipe(matrix, world) != null){
 				if(MetalworkingManager.getInstance().findMatchingRecipe(matrix, world) != null){
 					if(!world.isRemote){
@@ -114,10 +121,20 @@ public class BlockMetalworkStation extends BlockContainerMF{
 						world.playSoundEffect(x + 0.5D, y + 1.05D, z + 0.5D, "random.anvil_land", (float)(0.2F + world.rand.nextInt(3) / 10), (float)(0.4F + world.rand.nextInt(2) / 10));
 					}
 					tileentity.container.craftResult.setInventorySlotContents(0, MetalworkingManager.getInstance().findMatchingRecipe(matrix, world));
-					for(int i = 0; i < tileentity.getSizeInventory(); i++){
-						if(tileentity.getStackInSlot(i) != null && tileentity.getStackInSlot(i).stackSize >= 0){
-							--tileentity.getStackInSlot(i).stackSize;
+					for(int i = 0; i < 9; i++){
+						InventoryCrafting craft = tileentity.container.craftMatrix;
+						ItemStack stack = craft.getStackInSlot(i);
+						if(stack != null){
+							stack.stackSize--;
+							if(stack.stackSize <= 0) stack = null;
 						}
+						craft.setInventorySlotContents(i, stack);
+						tileentity.container.onCraftMatrixChanged(craft);
+						
+						/*if(tileentity.getStackInSlot(i) != null){
+							--tileentity.getStackInSlot(i).stackSize;
+							if(tileentity.getStackInSlot(i).stackSize <= 0) tileentity.setInventorySlotContents(i, null);
+						}*/
 					}
 					tileentity.container.onCraftMatrixChanged(matrix);
 				}
